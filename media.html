@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ZZZ Hub | Media</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700&family=Rajdhani:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <nav>
+        <div class="logo">Z<span>Z</span>Z HUB</div>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="characters.html">Agents</a></li>
+            <li><a href="media.html" class="active">Media</a></li>
+        </ul>
+        <button id="themeToggle">🌙</button>
+    </nav>
+
+    <section class="page-header">
+        <h1>Media <span>Gallery</span></h1>
+        <p>Wallpapers, screenshots, and artwork from New Eridu.</p>
+    </section>
+
+    <!-- Featured Slider -->
+    <div class="slider">
+        <img id="slideImage" src="images/zzz-bg.jpg" alt="ZZZ Slider">
+        <div class="slider-controls">
+            <button onclick="prevSlide()">&#10094;</button>
+            <button onclick="nextSlide()">&#10095;</button>
+        </div>
+    </div>
+
+    <!-- Full Gallery Grid -->
+    <section class="gallery-section">
+        <h2 class="gallery-title">All <span>Images</span></h2>
+
+        <div class="gallery-grid">
+            <div class="gallery-item">
+                <img src="images/gallery-1.jpg" alt="New Eridu" onclick="openLightbox(this)">
+            </div>
+            <div class="gallery-item">
+                <img src="images/gallery-2.jpg" alt="Hollow Combat" onclick="openLightbox(this)">
+            </div>
+            <div class="gallery-item">
+                <img src="images/gallery-3.jpg" alt="Anby" onclick="openLightbox(this)">
+            </div>
+            <div class="gallery-item">
+                <img src="images/gallery-4.jpg" alt="Nicole" onclick="openLightbox(this)">
+            </div>
+            <div class="gallery-item">
+                <img src="images/gallery-5.jpg" alt="Lycaon" onclick="openLightbox(this)">
+            </div>
+            <div class="gallery-item">
+                <img src="images/gallery-6.jpg" alt="Miyabi" onclick="openLightbox(this)">
+            </div>
+            <div class="gallery-item">
+                <img src="images/gallery-7.jpg" alt="Bangboo" onclick="openLightbox(this)">
+            </div>
+            <div class="gallery-item">
+                <img src="images/gallery-8.jpg" alt="Key Visual" onclick="openLightbox(this)">
+            </div>
+            <div class="gallery-item">
+                <img src="images/gallery-9.jpg" alt="Sixth Street" onclick="openLightbox(this)">
+            </div>
+            <div class="gallery-item">
+                <img src="images/gallery-10.jpg" alt="Belle and Wise" onclick="openLightbox(this)">
+            </div>
+        </div>
+    </section>
+
+    <!-- Lightbox Modal -->
+    <div id="lightbox" class="lightbox">
+        <span class="close-btn" onclick="closeLightbox()">&times;</span>
+        <img id="lightbox-img" src="" alt="Enlarged Image">
+        <div class="lightbox-caption" id="lightbox-caption"></div>
+    </div>
+
+    <footer>
+        <p>Intro to Computing Final Requirement</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

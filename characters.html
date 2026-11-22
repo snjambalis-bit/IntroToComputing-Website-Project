@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ZZZ Hub | Agents</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700&family=Rajdhani:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <nav>
+        <div class="logo">Z<span>Z</span>Z HUB</div>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="characters.html" class="active">Agents</a></li>
+            <li><a href="media.html">Media</a></li>
+        </ul>
+        <button id="themeToggle">🌙</button>
+    </nav>
+
+    <section class="page-header">
+        <h1>Playable <span>Agents</span></h1>
+        <p>Filter by attribute or faction.</p>
+    </section>
+
+    <!-- Filter Buttons -->
+    <div class="filters">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="attack">Attack</button>
+        <button class="filter-btn" data-filter="anomaly">Anomaly</button>
+        <button class="filter-btn" data-filter="stun">Stun</button>
+    </div>
+
+    <!-- Agent Grid -->
+    <section class="agent-grid">
+        <div class="agent-card" data-role="attack">
+            <img src="images/evelyn.jpg" alt="Evelyn">
+            <h3>Evelyn Chevalier</h3>
+            <p>Stars of Lyra</p>
+            <span class="tag">Attack</span>
+        </div>
+        <div class="agent-card" data-role="stun">
+            <img src="images/trigger.jpg" alt="Trigger">
+            <h3>Trigger</h3>
+            <p>Obol Squad</p>
+            <span class="tag">Stun</span>
+        </div>
+        <div class="agent-card" data-role="anomaly">
+            <img src="images/promeia.jpg" alt="Promeia">
+            <h3>Promeia</h3>
+            <p>Krampus Compliance Authority</p>
+            <span class="tag">Anomaly</span>
+        </div>
+        <div class="agent-card" data-role="attack">
+            <img src="images/billy.jpg" alt="Billy Kid">
+            <h3>Starlight Billy</h3>
+            <p>Cunning Hares</p>
+            <span class="tag">Attack</span>
+        </div>
+    </section>
+
+    <footer>
+        <p>Intro to Computing Final Requirement</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
